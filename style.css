@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+
+.A{
+    max-width: 1200px;
+    margin: 0 auto ;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color:white;
+
+}
+
+ul{
+    display: flex;
+    gap:20px;
+}
+
+header{
+    background-color:#270082;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul a li{
+    list-style: none;
+    color:white;
+
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hero-img{
+    background-image: url("./hero_image.png");
+    height: 100vh;
+    text-align: center;
+    color:white;
+    display: grid;
+    place-items: center;
+
+}
+.contener{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.contener h1{
+    font-size: 96px;
+}
+.contener h3{
+    font-size: 32px;
+}
+
+.music-con{
+    padding-top: 50px;
+    background-color: #281154;
+}
+.music-con{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.iphone{
+    margin-top: -400px;
+    position: relative;
+    top:400px;
+}
+.primary-btn{
+    background-color: red;
+    color: white;
+    padding:10px;
+    border: none;
+}
+.music-con h4{
+    max-width:700px;
+    margin:0 auto;
+}
+
+.primary-btn{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+  }
+  .primary-btn:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+  }
+
+  .about{
+    padding-top: 500px;
+    display: grid;
+    gap:50px;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .about p{
+    max-width: 900px;
+  }
+  .secondary-btn{
+    padding:10px;
+    background-color: #270082;
+    color:white;
+    border:none;
+  }
+  .secondary-btn:hover{
+    background-color: #09011e;
+    transition: 0.2s ease-in-out;
+  }
+
+  .video{
+    background-image: url("./video.png");
+    min-height: 800px;
+    display:grid;
+    place-items: center;
+    color:white;
+    text-align: center;
+  }
+  .con{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-top: -200px;
+  }
+
+  .con p{
+    max-width:1000px;
+  }
+
+  .hero-img , .video{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.gift-all{
+      padding-left: 100px;
+}
+
+.gift-all{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap:50px;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gift-content p{
+    line-height: 1.5;
+}
+
+.footer-upper{
+    background-color: #1b0058;
+    padding: 50px;
+}
+
+
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    max-width: 1200px;
+}
+.footer-upper h4 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+  }
+
+  .footer-lower {
+    background-color: #270082;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .footer-links ul{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+
+  .footer-links ul li{
+    list-style: none;
+  }
+@media(max-width:480px){
+    nav{
+        flex-direction: column;
+        padding: 10px;
+    }
+    ul{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .iphone {
+        /* Add your styling here for screens 480px or less */
+        width: 100%; /* For example, make the div full width */
+        padding: 10px; 
+      }
+      
+      .iphone img {
+        /* Add styling for the image */
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+      }
+    .mac-img{
+        width: 100%;
+        padding: 10px;
+    }
+    .mac-img img{
+        width: 100%;
+        height: auto;
+    }
+    .gift-all{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gift-card{
+        width: 100%;
+        padding: 10px;
+    }
+    .gift-card img{
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
